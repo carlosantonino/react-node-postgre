@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3.9"
 
 services:
   database:
@@ -12,10 +12,8 @@ services:
       - POSTGRES_PASSWORD=admin
       - POSTGRES_DB=database
     volumes:
-      - pgdata://data/postgres
+      - pgdata:/data/postgres
+
 volumes:
   pgdata:
     driver: local
-
-
-
